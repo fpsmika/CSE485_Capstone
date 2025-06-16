@@ -7,6 +7,30 @@ The objective of this project is to develop a generative AI powered chatbot that
 
 Business Goal: The primary goal is to streamline the data access and decision making by allowing non technical users to interact directly with complex data through simple text queries. 
 
+2. Target Users
+Chatbot will be primarily used by hospital supply managers.
+They are responsible for ensuring the hospital has all the necessary supplies in stock at the correct time and within the given budget. Their goals include making fast, informed purchasing decisions, monitoring trends over time, and identifying cost-saving opportunities.
+Pain points:
+Limited technical training.
+Reliance on manual spreadsheets and static reports, which are time consuming to navigate.
+Delays when waiting on the IT or analytics team to generate product insights.
+
+Natural Language Understanding: The chatbot must accept and interpret questions typed in plain English.
+SQL Queries: User queries should be automatically translated into correct SQL statements.
+Azure SQL Execution: The chatbot will be connected to MedMine’s Azure SQL database in order to run queries in real time.
+Response Generation: Results should be in easily readable format.
+Unclear Questions Handling: If a question is unclear, the chatbot will ask follow-up questions to narrow down the query.
+
+
+
+3. Core Functional Requirements
+Natural Language Understanding: The chatbot must accept and interpret questions typed in plain English.
+SQL Queries: User queries should be automatically translated into correct SQL statements.
+Azure SQL Execution: The chatbot will be connected to MedMine’s Azure SQL database in order to run queries in real time.
+Response Generation: Results should be in easily readable format.
+Unclear Questions Handling: If a question is unclear, the chatbot will ask follow-up questions to narrow down the query.
+User Feedback System: Include a rating system for users to provide feedback responses to improve accuracy over time.
+Interaction Logging: Every query and response should be securely logged.
 
 
 4. Non-Functional Requirements
@@ -44,6 +68,13 @@ Database: Azure SQL
 
 Hosting: Azure App Services or equivalent
 
+
+
+
+8. Constraints
+MVP will be developed using only the sample purchase order data from between 2018 and 2020. This constraint ensures the experimentation safety during the development and avoids unnecessary risks
+Chatbot must correctly identify missing, inconsistent, or delayed data. Responses should account for gaps and provide disclaimers when data is incomplete or corrupted.
+Chatbot’s main focus is on analytics and data querying rather than being a general-purpose customer support assistant.
 
 
 
