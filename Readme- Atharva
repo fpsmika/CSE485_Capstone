@@ -43,3 +43,23 @@ Database: Azure SQL
 
 
 Hosting: Azure App Services or equivalent
+
+
+
+
+
+Research 
+
+Carlander-Reuterfelt, D., Carrera, Á., Iglesias, C. A., Araque, Ó., Sánchez Rada, J. F., & Muñoz, S. (2020). JAICOB: A data science chatbot. IEEE Access, 8, 180672–180680. https://doi.org/10.1109/ACCESS.2020.3024795
+Description: This research paper goes over how to process user queries using NLP to retrieve and show data from its knowledge base. 
+	Advantage: Provides timely and reliable information/answers.
+Disadvantage:  Poorly framed questions will challenge the NLP capabilities of the model. 
+
+
+Aleedy, M., Shaiba, H., & Bezbradica, M. (2019).
+ Generating and analyzing chatbot responses using natural language processing. International Journal of Advanced Computer Science and Applications (IJACSA), 10(9). https://doras.dcu.ie/27514/
+Description: development of a customer support chatbot using deep learning and NLP techniques such as LSTM, GRU, and CNN. It focuses on generating conversational responses through sequence-to-sequence learning. 
+Advantage: LSTM and GRU models were shown to be effective at generating meaningful, emotionally appropriate responses, making them well-suited for customer interaction. 
+Disadvantage:
+ Models struggled with generating accurate responses to highly specific, informative queries. Training and inference also required significant computational resources, with LSTM being particularly time-consuming.
+
