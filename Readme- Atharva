@@ -63,3 +63,42 @@ Advantage: LSTM and GRU models were shown to be effective at generating meaningf
 Disadvantage:
  Models struggled with generating accurate responses to highly specific, informative queries. Training and inference also required significant computational resources, with LSTM being particularly time-consuming.
 
+
+
+
+
+
+Xiao's commit
+
+Product Owner Feedback 
+
+Summary of the Feedback given by Product Owner/Sponsor
+Project-plan depth: Provide a formal project plan with clear timelines, milestones, and ownership; keep overall duration within ~10–12 weeks.
+Data & Environment:
+Sponsor will supply sample PO data (3–4 years) + data dictionary next week.
+The team should mirror production: load data into Azure SQL, set up an ADF/ETL pipeline for ingestion.
+Scope & Priorities:
+Focus first on core chatbot capability—answering supply-chain spend questions from the facility’s own data.
+UI limited to the chat interface only, not the full SaaS front-end.
+Charts in responses are desirable if achievable via prompt engineering.
+Multi-user scalability is required; feedback collection is “nice-to-have” if time permits.
+Integration & IP:
+Integration with the existing SaaS product remains in scope; NDA/IP agreements must be signed before real data is used.
+Collaboration logistics:
+All artifacts to reside in the shared Google Drive; highlight areas where business input is needed for sponsor comments.
+Description of Team Response to Feedback
+Accepted actions:
+Will convert the current task list into a detailed, timeline-driven project plan and upload to the shared drive before Sprint 1 review.
+Agreed to rotate roles but keep named ownership for accountability; will reflect this in the plan.
+Confirmed focus on core Q&A functionality first; feedback mechanism and advanced recommendations deferred until core is stable.
+Will set up Azure SQL + ADF pipeline prototype as soon as sample data arrives.
+Committed to sign NDA/IP agreements immediately upon receipt to enable data access.
+Next-steps scheduled:
+Book follow-up meeting for architecture review once the plan is ready.
+Await sponsor’s sample data and data dictionary for ingestion work.
+
+
+
+Team Process Improvements
+We are getting better at keeping the github and taiga board updated and getting better at communicating with each other as well as the sponsor. This sprint helped us get better at communicating and working together as a group and helping each other out whenever needed. We also have a discord set up which helped us a lot to communicate as well as having meetings with our sponsor to answer any questions we had. 
+
