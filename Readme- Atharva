@@ -1,1 +1,45 @@
 Readme for Sprint 1 
+
+
+1. Project Overview
+The objective of this project is to develop a generative AI powered chatbot that allows hospital staff and supply chain managers to ask questions about historical and current purchase order data. The chatbot will convert these queries to SQL and retrieve relevant data from the azure SQL database and return useful and clear analytical insights. Currently it will support standalone operation but in the future will be integrated into MedMine’s existing SAAS platform. 
+
+
+Business Goal: The primary goal is to streamline the data access and decision making by allowing non technical users to interact directly with complex data through simple text queries. 
+
+
+
+4. Non-Functional Requirements
+Response time: The chatbot must have a good response time (We are aiming for under 5 seconds) for the majority of the queries to ensure a smooth experience. 
+
+
+Scalability: The chatbot must be capable of supporting multiple current users without degradation in performance with architecture to scale in the future. 
+
+
+Reliability: Since there is going to be a delay in weekly data, The chatbot needs to be able to handle the ingestion gracefully. 
+
+
+Accuracy: The text to SQL component must generate correct SQL output of the validated queries. (We cannot confirm an accuracy score at this point) 
+
+
+
+5. Integration Requirements
+The chatbot is to be designed for a seamless integration into the Saas software and align with the platform's system design and the authentication flow. 
+
+
+The chatbot should be built with future support for real time data ingestion, specifically handling the data updates and accommodating the late reporting clients. 
+
+6. Technology Stack
+Frontend: React (for UI integration) 
+
+
+Backend: FastAPI (Python)
+
+
+Model: OpenAI GPT-4 (via API)
+
+
+Database: Azure SQL
+
+
+Hosting: Azure App Services or equivalent
