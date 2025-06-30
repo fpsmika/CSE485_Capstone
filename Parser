@@ -1,0 +1,20 @@
+import pandas as pd
+
+def read_excel_file(file_path, sheet_name=0):
+    try:
+        # Load the Excel file
+        df = pd.read_excel(file_path, sheet_name=sheet_name)
+        
+        # Display the first few rows
+        print("Data Preview:")
+        print(df.head())
+        
+        return df
+    except Exception as e:
+        print(f"Error reading Excel file: {e}")
+        return None
+
+# Example usage
+if __name__ == "__main__":
+    file_path = "sample_data.xlsx"  # Replace with your actual Excel file path
+    data = read_excel_file(file_path)
